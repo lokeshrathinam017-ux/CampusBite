@@ -1,11 +1,15 @@
-var trackBtn = document.getElementById("track-btn")
+var trackBtns = document.querySelectorAll(".track-btn")
 
-trackBtn.addEventListener("click", function () {
+trackBtns.forEach(function (button) {
 
-    var orderId = "001"
-    var orderStatus = "Preparing"
+    button.addEventListener("click", function () {
 
-    localStorage.setItem("selectedOrderId", orderId)
-    localStorage.setItem("selectedOrderStatus", orderStatus)
+        var orderId = "001"
+        var orderStatus = "Preparing"
+
+        localStorage.setItem("selectedOrderId", orderId)
+        localStorage.setItem("selectedOrderStatus", orderStatus)
+
+    })
 
 })
