@@ -8,7 +8,7 @@ const menuCategory = document.querySelectorAll(".menuCategory");
 //console.log(menuCategory);
 //console.log([...menuCategory]);
 const sortDropdown = document.getElementById("sortDropdown"); // <select> with options: default, priceLowHigh, priceHighLow, nameAZ
-
+ const allProductsCount = document.getElementById('allProductsCount');
 // ---------- RENDER a whole list of products ----------
 // Filter/sort just decide WHICH items to pass in.
 function displayMenu(items) {
@@ -35,7 +35,7 @@ function displayMenu(items) {
     <button id="${item.id}"  class="addToCart md:self-end self-center border border-[#39C6A5] text-green-900 p-2 md:px-5 md:py-1 rounded text-xs hover:bg-[#39C6A5] hover:text-white cursor-pointer">
      <i class='fa-solid fa-plus'></i>
     </button>`;
-    const allProductsCount = document.getElementById('allProductsCount');
+   
 
     //console.log(item.name);
     container.append(card);
