@@ -109,6 +109,14 @@ cartitems.forEach(function (items) {
         //console.log(items.id);
         cartIds = cartIds.filter((cid) => cid != items.id);
        // console.log(cartIds);
+       if(cartIds.length==0){
+        const infoDiv = document.createElement('div');
+        infoDiv.innerHTML = '<h1 class="my-10 text-[#FF5A4F]">Your cart is feeling lonely! Start adding items!</h1> <a href="menu.html" class="my-10 border py-4 px-5 rounded bg-[#FF5A4F] text-white" >Continue Shopping</a>';
+        cartcontainer.append(infoDiv);
+        orderTotalSection.classList.add('hidden');
+            // alert('empty cart');
+        
+}      
        localStorage.setItem('cartIds', JSON.stringify(cartIds));
     });
 
