@@ -40,7 +40,7 @@ function displayMenu(items) {
     //console.log(item.name);
     container.append(card);
   });
-  allProductsCount.innerHTML = `<span>(${items.length})</span>`;
+  allProductsCount.innerHTML = `All Products<span>(${items.length})</span>`;
 }
 
 // ---------- FILTER by selected categories ----------
