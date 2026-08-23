@@ -1,0 +1,12 @@
+.mainTabs a.active{
+    border-bottom: 2px solid #FF5A4F;
+    
+}
+.menuSection li.active{
+    background-color:#fef3ed;
+    color:#FF5A4F;
+}
+
+.poppins-regular {
+  font-family: "Poppins";
+}

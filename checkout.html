@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!--Tailwind CND Link-->
+    <link href=" https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css " rel="stylesheet">
+</head>
+</head>
+<body>
+ <!--Navigation bar-->
+    <section class="sticky top-0 z-50 flex  justify-between items-center p-5 bg-white ">
+
+        <!--name and logo-->
+
+        <div class=" flex text-3xl font-bold md:text-4xl font-bold  ">
+            <h1>Campus</h1>
+            <h1 class="text-[#FF5A4F]">Bite</h1>
+        </div>
+
+        <!--menu-- Favorites | Offers & Coupons | Help & Support | About | Settings | Logout-->
+        <div class=" md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+
+
+        <div class="hidden md:flex gap-6 text-md">
+            <a href="home.html" class="hover:text-[#FF5A4F]">Home</a>
+            <a href="restaurant.html" class="hover:text-[#FF5A4F]">Restaurants</a>
+            <a href="menu.html" class="hover:text-[#FF5A4F]">Menu</a>
+            <a href="order_stu.html" class="hover:text-[#FF5A4F]">Orders</a>
+        </div>
+
+        <!-- User profile and Cart -->
+        <div class="hidden md:flex items-center gap-6">
+
+            <!-- Search icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-5 h-5 cursor-pointer">
+
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+            <!-- Cart icon -->
+           <div class="relative w-fit cursor-pointer" id="viewCart">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5" >
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                <span id="cartCountSpan"
+                    class="hidden absolute top-[-10px] w-[20px] h-[20px] p-[2px] right-[-12px] text-center text-white text-xs bg-[#FF5A4F]  rounded-full "></span>
+               
+            </div>
+            <!-- Existing Profile icon -->
+
+            <a href="./profile.html" class="inline-flex items-center justify-center p-2 rounded-lg" title="Profile">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+
+                </svg>
+            </a>
+            <!-- logout -->
+            <a href="index.html" class="bg-[#FF5A4F] text-white text-sm px-4 py-2 rounded-lg">
+                Logout
+            </a>
+
+            
+            
+
+
+
+        </div>
+    </section>
+
+
+    <h1 class="text-center font-bold text-3xl mt-16 text-green-500">🎉 Order Placed Successfully!</h1>
+    <h3 class="text-center text-2xl mt-2 font-semibold">Thank you for your order! Your delicious food is being prepared. 🍔</h3>
+    <div class="text-center mt-6">
+    <a href="index.html" class=" text-blue-30 mt-6">
+        Visit Home Page
+    </a>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-10">
+
+        <div class="px-6 py-10 md:px-10 lg:px-20
+                    grid grid-cols-1 sm:grid-cols-2
+                    lg:grid-cols-4 gap-8">
+            <div>
+
+                <h2 class="text-2xl font-bold">
+                    Campus<span class="text-[#FF5A4F]">Bite</span>
+                </h2>
+
+                <p class="text-gray-400 text-sm leading-6 mt-4">
+                    Delicious meals from your favourite campus
+                    restaurants, delivered hot and fresh.
+                </p>
+
+                <div class="flex gap-4 mt-5">
+
+                    <a href="" class="text-gray-400 hover:text-[#FF5A4F]">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
+
+                    <a href="" class="text-gray-400 hover:text-[#FF5A4F]">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                    </a>
+
+                    <a href="" class="text-gray-400 hover:text-[#FF5A4F]">
+                        <i class="fa-brands fa-x-twitter text-xl"></i>
+                    </a>
+
+                </div>
+
+            </div>
+            <div>
+
+                <h3 class="font-semibold text-lg mb-4">
+                    Quick Links
+                </h3>
+
+                <div class="flex flex-col gap-3 text-gray-400 text-sm">
+
+                    <a href="" class="hover:text-white">Home</a>
+                    <a href="" class="hover:text-white">Restaurants</a>
+                    <a href="" class="hover:text-white">Menu</a>
+                    <a href="" class="hover:text-white">Offers</a>
+
+                </div>
+
+            </div>
+            <div>
+
+                <h3 class="font-semibold text-lg mb-4">
+                    Support
+                </h3>
+
+                <div class="flex flex-col gap-3 text-gray-400 text-sm">
+
+                    <a href="" class="hover:text-white">Help & Support</a>
+                    <a href="" class="hover:text-white">FAQs</a>
+                    <a href="" class="hover:text-white">Privacy Policy</a>
+                    <a href="" class="hover:text-white">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg mb-4">
+                    Contact Us
+                </h3>
+                <div class="flex flex-col gap-4 text-gray-400 text-sm">
+                    <p>
+                        <i class="fa-solid fa-location-dot mr-2 text-[#FF5A4F]"></i>
+                        Campus Food Court
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone mr-2 text-[#FF5A4F]"></i>
+                        +91 98765 43210
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope mr-2 text-[#FF5A4F]"></i>
+                        hello@campusbite.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 text-center
+                    px-4 py-5 text-gray-400 text-sm">
+
+            © 2026 CampusBite. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <!--Bottom navigation -->
+
+    <section
+        class=" fixed bg-white  flex justify-around bottom-0 left-0 right-0 border-t border-gray-400 p-3 md:hidden">
+        <a href="home.html" class="flex flex-col items-center"><i class="fa-sharp fa-regular fa-house text-2xl"></i>
+            <p>Home</p>
+        </a>
+        <a href="restaurant.html" class="flex flex-col items-center"><i class="fa-solid fa-utensils text-2xl"></i>
+            <p>Restaurant</p>
+        </a>
+        <a href="menu.html" class="flex flex-col items-center"><i class="fa-solid fa-book-open text-2xl"></i>
+            <p>Menu</p>
+        </a>
+        <a href="order_stu.html" class="flex flex-col items-center"><i class="fa-solid fa-receipt text-2xl"></i>
+            <p>Order</p>
+        </a>
+        <a href="profile.html" class="flex flex-col items-center"><i class="fa-solid fa-user text-2xl"></i>
+            <p>Profile</p>
+        </a>
+    </section>
+</body>
+</html>
