@@ -30,7 +30,7 @@
             <!-- Header -->
             <div class="flex items-center gap-4 px-5 py-5 border-b border-gray-200">
 
-                <a href="index.html" class="text-xl text-gray-700 hover:text-[#FF5A4F]">
+                <a href="home.html" class="text-xl text-gray-700 hover:text-[#FF5A4F]">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
 
@@ -152,8 +152,8 @@
 
 
                 <!-- Logout -->
-                <button class="flex items-center gap-5 py-4 w-full
-               text-[#222222] hover:text-[#FF5A4F] hover:font-semibold">
+                <button id="logoutbtn" class="flex items-center gap-5 py-4 w-full
+       text-[#222222] hover:text-[#FF5A4F] hover:font-semibold">
 
                     <img src="./Images_stu/logout.png" alt="Logout" class="w-8 h-8 object-contain">
 
@@ -170,5 +170,13 @@
     </div>
 
 </body>
+
+<script>
+    var logoutbtn = document.getElementById("logoutbtn")
+
+    logoutbtn.addEventListener("click", function () {
+        window.location.href = "index.html"
+    })
+</script>
 
 </html>
