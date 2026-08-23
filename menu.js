@@ -8,7 +8,7 @@ const menuCategory = document.querySelectorAll(".menuCategory");
 //console.log(menuCategory);
 //console.log([...menuCategory]);
 const sortDropdown = document.getElementById("sortDropdown"); // <select> with options: default, priceLowHigh, priceHighLow, nameAZ
- const allProductsCount = document.getElementById('allProductsCount');
+const allProductsCount = document.getElementById('allProductsCount');
 // ---------- RENDER a whole list of products ----------
 // Filter/sort just decide WHICH items to pass in.
 function displayMenu(items) {
