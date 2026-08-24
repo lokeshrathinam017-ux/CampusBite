@@ -1,98 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Student Login - CampusBite</title>
+        <title>Student Login - CampusBite</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 
-<body class="bg-[#E9FAF5] font-['Poppins']">
+    <body class="bg-[#E9FAF5] font-['Poppins']">
 
-    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="min-h-screen flex items-center justify-center px-4">
 
-        <div class="bg-white w-full max-w-md p-8 rounded-xl shadow-md">
+            <div class="bg-white w-full max-w-md p-8 rounded-xl shadow-md">
 
-            <!-- Logo -->
-            <h1 class="text-3xl font-bold text-center text-[#FF5A4F]">
-                CampusBite
-            </h1>
+                <!-- Logo -->
+                <h1 class="text-3xl font-bold text-center text-[#FF5A4F]">
+                    CampusBite
+                </h1>
 
-            <p class="text-center text-gray-500 mt-2">
-                College Food Ordering System
-            </p>
+                <p class="text-center text-gray-500 mt-2">
+                    College Food Ordering System
+                </p>
 
-            <!-- Slight change from Admin -->
-            <h2 class="text-2xl font-semibold text-center mt-6">
-                Student Login
-            </h2>
+                <!-- Slight change from Admin -->
+                <h2 class="text-2xl font-semibold text-center mt-6">
+                    Student Login
+                </h2>
 
 
 
-            <form id="student-login-form" class="mt-6">
+                <form id="student-login-form" class="mt-6">
 
-                <!-- Student ID -->
-                <div class="mb-4">
+                    <!-- Student ID -->
+                    <div class="mb-4">
 
-                    <label for="studentid" class="block mb-2 font-medium">
-                        Student ID
-                    </label>
+                        <label for="studentid" class="block mb-2 font-medium">
+                            Student ID
+                        </label>
 
-                    <input type="text" id="studentid" placeholder="Enter demo Student ID"
-                        class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-[#39C6A5]">
+                        <input type="text" id="studentid" placeholder="Enter demo Student ID"
+                            class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-[#39C6A5]">
 
-                    <p id="studentid-error" class="text-red-500 text-sm mt-1">
-                    </p>
+                        <p id="studentid-error" class="text-red-500 text-sm mt-1">
+                        </p>
 
-                </div>
+                    </div>
 
-                <!-- Password -->
-                <div class="mb-5">
+                    <!-- Password -->
+                    <div class="mb-5">
 
-                    <label for="password" class="block mb-2 font-medium">
-                        Password
-                    </label>
+                        <label for="password" class="block mb-2 font-medium">
+                            Password
+                        </label>
 
-                    <input type="password" id="password" placeholder="Enter  demo Password"
-                        class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-[#39C6A5]">
+                        <input type="password" id="password" placeholder="Enter  demo Password"
+                            class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-[#39C6A5]">
 
-                    <p id="password-error" class="text-red-500 text-sm mt-1">
-                    </p>
+                        <p id="password-error" class="text-red-500 text-sm mt-1">
+                        </p>
 
-                </div>
+                    </div>
 
-                <!-- Login Button -->
-                <button type="submit"
-                    class="w-full bg-[#FF5A4F] text-white py-3 rounded-lg font-semibold hover:bg-[#e64d43]">
-                    Login
-                </button>
+                    <!-- Login Button -->
+                    <button type="submit"
+                        class="w-full bg-[#FF5A4F] text-white py-3 rounded-lg font-semibold hover:bg-[#e64d43]">
+                        Login
+                    </button>
 
-            </form>
+                </form>
 
-            <!-- Admin Login Link -->
-            <p class="text-center text-sm text-gray-500 mt-6">
-                Are you an Admin?
-                <a href="admin.html" class="text-[#FF5A4F] font-semibold hover:underline">
+                <!-- Admin Login Link -->
+                <a href="admin.html" class="block w-full text-center border border-[#FF5A4F]
+            text-[#FF5A4F] py-3 rounded-lg mt-4 font-semibold
+            hover:bg-[#FF5A4F] hover:text-white">
                     Admin Login
                 </a>
-            </p>
+
+            </div>
 
         </div>
 
-    </div>
+        <script src="index.js"></script>
 
-    <script src="index.js"></script>
+    </body>
 
-</body>
-
-</html>
+    </html>
