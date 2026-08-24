@@ -1,11 +1,11 @@
 var trackBtns = document.querySelectorAll(".track-btn")
 
-trackBtns.forEach(function (button) {
+trackBtns.forEach(function (link) {
 
-    button.addEventListener("click", function () {
+    link.addEventListener("click", function () {
 
-        var orderId = "001"
-        var orderStatus = "Preparing"
+        var orderId = link.dataset.orderId
+        var orderStatus = link.dataset.orderStatus
 
         localStorage.setItem("selectedOrderId", orderId)
         localStorage.setItem("selectedOrderStatus", orderStatus)
