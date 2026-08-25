@@ -125,17 +125,10 @@ let cartCount = 0;
 container.addEventListener('click', (event) => {
   const btn = event.target.closest('.addToCart');// to find current add button clicked
   //console.log(btn);
-  btn.classList.toggle("item-added");
+  //btn.classList.toggle("item-added");
   if (btn.classList.contains("item-added")) {
-    //console.log(cartCountSpan);
-    cartCountSpan.classList.remove('hidden');
-    btn.classList.add('item-added', 'text-[#FF5A4F]', 'border-[#FF5A4F]', 'hover:bg-[#FF5A4F]', 'hover:text-white');
-    btn.classList.remove('text-green-900', 'border-[#39C6A5]', 'hover:bg-[#39C6A5]');
-    btn.innerHTML = "<i class='fa-regular fa-trash-can'></i>";
-    cartCount = cartCount + 1;
-    cartCountSpan.textContent = `${cartCount}`;
-  } else {
-    btn.classList.remove('item-added', 'text-[#FF5A4F]', 'border-[#FF5A4F]', 'hover:bg-[#FF5A4F]', 'hover:text-white');
+   // console.log('yes');
+   btn.classList.remove('item-added', 'text-[#FF5A4F]', 'border-[#FF5A4F]', 'hover:bg-[#FF5A4F]', 'hover:text-white');
     btn.classList.add('text-green-900', 'border-[#39C6A5]', 'hover:bg-[#39C6A5]', 'hover:text-white');
     btn.innerHTML = "<i class='fa-solid fa-plus'></i>";
     cartCount = cartCount - 1;
@@ -145,6 +138,15 @@ container.addEventListener('click', (event) => {
       cartCountSpan.textContent = '';
       cartCountSpan.classList.add('hidden');
     }
+  } else {
+         //console.log('no');
+          cartCountSpan.classList.remove('hidden');
+    btn.classList.add('item-added', 'text-[#FF5A4F]', 'border-[#FF5A4F]', 'hover:bg-[#FF5A4F]', 'hover:text-white');
+    btn.classList.remove('text-green-900', 'border-[#39C6A5]', 'hover:bg-[#39C6A5]');
+    btn.innerHTML = "<i class='fa-regular fa-trash-can'></i>";
+    cartCount = cartCount + 1;
+    cartCountSpan.textContent = `${cartCount}`;
+    
   }
 
 });
