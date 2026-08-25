@@ -102,8 +102,61 @@ function displayRestaurants() {
         delbutton.textContent = "Delete"
 
         delbutton.className =
-            "border border-[#FF5A4F] text-[#FF5A4F] px-3 py-1 rounded-lg hover:bg-[#FF5A4F] hover:text-white"
+            "ml-2 border border-[#FF5A4F] text-[#FF5A4F] px-3 py-1 rounded-lg hover:bg-[#FF5A4F] hover:text-white"
 
+
+        // Edit button
+        var editbutton = document.createElement("button")
+
+        editbutton.textContent = "Edit"
+
+        editbutton.className =
+            "border border-[#39C6A5] text-[#16866D] px-3 py-1 rounded-lg hover:bg-[#39C6A5] hover:text-white"
+
+
+        // Edit event
+        editbutton.addEventListener("click", function () {
+
+            var newName = prompt("Enter restaurant name", restaurant.name)
+
+            if (newName === null || newName.trim() === "") {
+                return
+            }
+
+            var newCategory = prompt(
+                "Enter category: Veg or Non-Veg",
+                restaurant.category
+            )
+
+            if (newCategory === null || newCategory.trim() === "") {
+                return
+            }
+
+            var newLocation = prompt(
+                "Enter restaurant location",
+                restaurant.location
+            )
+
+            if (newLocation === null || newLocation.trim() === "") {
+                return
+            }
+
+            var newStatus = prompt(
+                "Enter status: Active or Inactive",
+                restaurant.status
+            )
+
+            if (newStatus === null || newStatus.trim() === "") {
+                return
+            }
+
+            restaurant.name = newName.trim()
+            restaurant.category = newCategory.trim()
+            restaurant.location = newLocation.trim()
+            restaurant.status = newStatus.trim()
+
+            displayRestaurants()
+        })
 
         // Delete event
         delbutton.addEventListener("click", function () {
@@ -112,14 +165,15 @@ function displayRestaurants() {
 
         })
 
-
-        actiondata.append(delbutton)
+        // Add Edit and Delete buttons to action cell
+        actiondata.append(editbutton, delbutton)
 
         row.append(actiondata)
 
         restaurantbody.append(row)
 
-    })
+
+     })
 
 }
 
