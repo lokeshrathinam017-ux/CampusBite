@@ -21,7 +21,7 @@
 </head>
 
 <body class="poppins-regular w-full">
-     <!--Navigation bar-->
+   <!--Navigation bar-->
     <section class="sticky top-0 z-50 flex  justify-between items-center p-5 bg-white ">
 
         <!--name and logo-->
@@ -31,13 +31,7 @@
             <h1 class="text-[#FF5A4F]">Bite</h1>
         </div>
 
-        <!--menu-- Favorites | Offers & Coupons | Help & Support | About | Settings | Logout-->
-        <div class=" md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </div>
+       
 
 
         <div class="hidden md:flex gap-6 text-md">
@@ -48,18 +42,18 @@
         </div>
 
         <!-- User profile and Cart -->
-        <div class="hidden md:flex items-center gap-6">
+        <div class="flex items-center gap-2 md:gap-6">
 
             <!-- Search icon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-5 h-5 cursor-pointer">
+                stroke="currentColor" class="w-5 h-5 cursor-pointer hidden md:block">
 
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
 
             <!-- Cart icon -->
-           <div class="relative w-fit cursor-pointer" id="viewCart">
+           <div class="relative w-fit cursor-pointer" " id="viewCart">
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-5 h-5" >
@@ -72,7 +66,7 @@
             </div>
             <!-- Existing Profile icon -->
 
-            <a href="./profile.html" class="inline-flex items-center justify-center p-2 rounded-lg" title="Profile">
+            <a href="./profile.html" class="md:inline-flex items-center justify-center p-2 rounded-lg" title="Profile">
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-5 h-5">
@@ -83,16 +77,18 @@
                 </svg>
             </a>
             <!-- logout -->
-            <a href="index.html" class="bg-[#FF5A4F] text-white text-sm px-4 py-2 rounded-lg">
+            <a href="index.html" class="bg-[#FF5A4F] text-white text-sm px-4 py-2 rounded-lg hidden md:block">
                 Logout
             </a>
-
-            
-            
-
-
-
+             <!--menu-- Favorites | Offers & Coupons | Help & Support | About | Settings | Logout-->
+        <div class="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
         </div>
+        </div>
+        
     </section>
 
     <div
