@@ -151,9 +151,8 @@ container.addEventListener('click', (event) => {
 
 // Pass cart items to cart.html page
 const viewCart = document.getElementById('viewCart');
-const addToCart = document.querySelectorAll('.addToCart');
-
 viewCart.addEventListener('click', () => {
+  const addToCart = document.querySelectorAll('.addToCart');
   const addedItems = [...addToCart].filter((cartItem) => cartItem.classList.contains('item-added'));
   const cartItemIds = addedItems.map((item) => item.id);
   localStorage.setItem('cartIds', JSON.stringify(cartItemIds));
