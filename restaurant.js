@@ -34,7 +34,7 @@ function makeCard(d) {
   const menuLink = "restaurant_menu.html?restaurant=" + encodeURIComponent(d.restaurant);
 
   return `
-    <div class="dish-card w-[calc(50%-6px)] flex items-center gap-2 p-3 border rounded-xl shadow-sm">
+    <div class="dish-card w-full md:w-[calc(50%-6px)] flex items-center gap-2 p-3 border rounded-xl shadow-sm">
       <img src="${d.image}" alt="${d.restaurant}" class="w-14 h-14 rounded-lg object-cover">
       <div class="flex-1 min-w-0">
         <div class="flex items-start justify-between gap-1">
