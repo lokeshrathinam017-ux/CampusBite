@@ -33,7 +33,7 @@ function makeCard(d) {
     : '<span class="text-gray-500">Delivery fee applies</span>';
   const menuLink = "restaurant_menu.html?restaurant=" + encodeURIComponent(d.restaurant);
 
-  return `
+  return `<a href="${menuLink}">
     <div class="dish-card w-full md:w-[calc(50%-6px)] flex items-center gap-2 p-3 border rounded-xl shadow-sm">
       <img src="${d.image}" alt="${d.restaurant}" class="w-14 h-14 rounded-lg object-cover">
       <div class="flex-1 min-w-0">
@@ -55,6 +55,7 @@ function makeCard(d) {
         </svg>
       </a>
     </div>
+    </a>
   `;
 }
 
