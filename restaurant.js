@@ -33,10 +33,11 @@ function makeCard(d) {
     : '<span class="text-gray-500">Delivery fee applies</span>';
   const menuLink = "restaurant_menu.html?restaurant=" + encodeURIComponent(d.restaurant);
 
-  return `<a href="${menuLink}">
+  return `
     <div class="dish-card w-full md:w-[calc(50%-6px)] flex items-center gap-2 p-3 border rounded-xl shadow-sm">
-      <img src="${d.image}" alt="${d.restaurant}" class="w-14 h-14 rounded-lg object-cover">
+      <a href="${menuLink}"><img src="${d.image}" alt="${d.restaurant}" class="w-14 h-14 rounded-lg object-cover"></a>
       <div class="flex-1 min-w-0">
+       <a href="${menuLink}">
         <div class="flex items-start justify-between gap-1">
           <h3 class="font-semibold text-sm truncate">${d.restaurant}</h3>
           <button onclick="toggleFav('${d.id}')">
@@ -44,10 +45,10 @@ function makeCard(d) {
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
             </svg>
           </button>
-        </div>
-        <p class="text-xs text-gray-500 truncate">${d.name}</p>
-        <p class="text-xs text-gray-500">${d.location} &bull; ${d.time}</p>
-        <p class="text-xs mt-1">&#9733; ${d.rating} ${delivery}</p>
+        </div></a>
+         <a href="${menuLink}"><p class="text-xs text-gray-500 truncate">${d.name}</p></a>
+ <a href="${menuLink}"><p class="text-xs text-gray-500">${d.location} &bull; ${d.time}</p></a>
+         <a href="${menuLink}"><p class="text-xs mt-1">&#9733; ${d.rating} ${delivery}</p></a>
       </div>
       <a href="${menuLink}" class="cursor-pointer text-gray-400 hover:text-coral flex-shrink-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -55,7 +56,6 @@ function makeCard(d) {
         </svg>
       </a>
     </div>
-    </a>
   `;
 }
 
